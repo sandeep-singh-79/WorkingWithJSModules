@@ -6,12 +6,12 @@
 // default import - can be named anything
 import getSessions from "./sessionRepository.js";
 // named import
-import {sessionTemplate, errorMessage} from "./template.js"
+import * as template from "./template.js"
 
 function render() {
     var list = document.querySelector("#sessions");
     if (!list) return;
-    list.innerHTML = sessionTemplate(data.listItems);
+    list.innerHTML = template.sessionTemplate(data.listItems);
   }
 
   var data = {
