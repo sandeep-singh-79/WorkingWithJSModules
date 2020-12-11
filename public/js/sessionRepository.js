@@ -1,8 +1,8 @@
-const sessionURL = "session.json";
+const sessionURL = "sessions.json";
 
 let sessionList = [];
 
-export default function getSessions() {
+function getSessions() {
   return new Promise(function (resolve, reject) {
     var oReq = new XMLHttpRequest();
     oReq.onload = function (e) {
@@ -16,4 +16,4 @@ export default function getSessions() {
 }
 
 export { getSessions as default, sessionURL };
-export { sessionTemplate } from "./template.js";
+//export { sessionTemplate } from "./template.js";
