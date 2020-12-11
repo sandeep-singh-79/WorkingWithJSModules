@@ -2,10 +2,13 @@
 // exposed globally.
 // However, this approach makes it difficult to bubble the requisite
 // items back up the scope.
-import * from "./sessionRepository.js";
 
-(function () {
-  function render() {
+// default import - can be named anything
+import getSessions from "./sessionRepository.js";
+// named import
+import {sessionTemplate, errorMessage} from "./template.js"
+
+function render() {
     var list = document.querySelector("#sessions");
     if (!list) return;
     list.innerHTML = sessionTemplate(data.listItems);
@@ -20,4 +23,3 @@ import * from "./sessionRepository.js";
     data.listItems = sessions;
     render();
   });
-})();
