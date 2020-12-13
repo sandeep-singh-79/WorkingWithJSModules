@@ -1,2 +1,2 @@
 # WorkingWithModules
-This Repository is for the Working with JavaScript Modules Pluralsight course. 
+This Repository is a fork/clone for the Working with JavaScript Modules Pluralsight course. 
